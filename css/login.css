@@ -1,7 +1,7 @@
 * {
-    background-color: white;
-    padding: 7px;
-    margin: 7px;
+    /*background-color: white;*/
+    /*padding: 7px 7px;*/
+    /*margin: 7px;*/
 }
 
 body, html {
@@ -12,31 +12,42 @@ body, html {
 }
 
 form {
+    margin: 0;
     /* This form should be separated from other elements by 1em */
+
     /* There must be 1em between the content and the border of this element */
+    border: 1em;
 }
 
 fieldset {
     -webkit-box-shadow: 1px 1px 1px 0 rgba(0,0,0,0.75);
     -moz-box-shadow: 10px 10px 5px 0 rgba(0,0,0,0.75);
     box-shadow: 10px 10px 5px 0 rgba(0,0,0,0.75);
+    margin: 0;
+    background-color: white;
     /* There must be 1em between the content and the border of this element */
     /* It should have no border */
     /* Its background should be white */
 }
 
-.width-80 {
+.width-80 { width: 80%;
+
     /* The element with this class should 80% of the width and it must be centered */
     /* Read how to center elements with margin here: http://learnlayout.com/margin-auto.html*/
 }
 
 .form-group {
     /* This element must use 100% of the width */
+    background-color: white;
+    width: 100%;
     /* It should have a separation of .5em from elements on top of it and below it*/
+    padding-top: .5em;
+    padding-bottom: .5em;
 }
 
 .form-label {
     /* The text of a label must be bold */
+    font-weight: bold;
 }
 
 .form-control {
@@ -53,9 +64,10 @@ fieldset {
     /* There must be a separation of 8px between the text and the border of this element */
     /* The text color of this element should be white and bold */
     /* The border of this element should be 1px, and its color should be light grey */
-    background-color: #0fb784;
+    /*background-color: #0fb784;*/
 }
 
-.btn-block { width 100%
+.btn-block {
+    width: 100%;
     /* This element should use 100% of the width */
 }

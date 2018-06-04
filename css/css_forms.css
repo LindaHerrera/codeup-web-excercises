@@ -14,3 +14,11 @@ h2.fancy-header {
         width;
         background-color: papayawhip;
     }
+body {
+    font-family: AppleMyungjo;
+    background-image: url("../img/mountain.png");
+    background-size: contain;
+    width: 95em;
+    height: 99%;
+    border: 2px solid;
+}
