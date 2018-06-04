@@ -1,0 +1,11 @@
+.alert-info {
+    width: 100%;
+    height: 50px;
+
+}
+@media screen and (min-width: 320px) {
+    .alert-info {
+        background-color: #C0FFFF;
+        position: absolute;
+    }
+}
