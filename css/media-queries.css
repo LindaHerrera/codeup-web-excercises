@@ -1,11 +1,22 @@
 .alert-info {
+    background-color: #C0FFFF;
+}
+
+h1 {
     width: 100%;
     height: 50px;
 
 }
 @media screen and (min-width: 320px) {
+    h1 {
+        position: center;
+    }
+}
+
+@media screen and (min-width:
+320px){
     .alert-info {
-        background-color: #C0FFFF;
-        position: absolute;
+        position: center;
+        padding-left: 80px;
     }
 }
