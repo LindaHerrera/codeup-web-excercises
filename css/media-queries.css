@@ -1,22 +1,37 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@media screen and (max-width: 320px) {
+    body {
+        width: 100%;
+        margin: 10px;
+    }
+}
 .alert-info {
     background-color: #C0FFFF;
+    width: 100%;
+    height: 38px;
+
 }
 
 h1 {
     width: 100%;
-    height: 50px;
+    height: 40px;
 
 }
-@media screen and (min-width: 320px) {
+@media only screen and (max-width: 320px) {
     h1 {
-        position: center;
+        text-align: center;
     }
 }
 
-@media screen and (min-width:
+@media only screen and (max-width:
 320px){
     .alert-info {
-        position: center;
-        padding-left: 80px;
+        text-align: center;
+
     }
 }
