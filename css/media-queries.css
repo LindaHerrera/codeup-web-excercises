@@ -3,6 +3,17 @@
     padding: 0;
     box-sizing: border-box;
 }
+li {
+    list-style-type: none;
+}
+@media screen and (max-width:320px) {
+    .nav-links {
+        height: 81px;
+        line-height: 20px;
+        text-align: center;
+    }
+}
+
 
 @media screen and (max-width: 320px) {
     body {
