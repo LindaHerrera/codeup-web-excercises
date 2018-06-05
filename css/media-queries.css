@@ -11,8 +11,9 @@
     text-align: center;
     font-weight: bold;
     display: block;
+}
+.nav-links {
     list-style: none;
-
 }
 ul {
     padding: 0;
@@ -21,7 +22,6 @@ img {
     width: 100%;
     margin: .5em;
 }
-
 .alert-info a {
     background-color: #C0FFFF;
     display: block;
@@ -29,8 +29,9 @@ img {
     text-decoration: none;
     color: black;
     padding: 15px;
-    border:2px solid black;
-@media screen and (max-width:320px) {
+    border: 2px solid black;
+}
+@media screen and (min-width:320px) {
     .nav-links {
         height: 81px;
         line-height: 20px;
@@ -48,19 +49,18 @@ h1 {
     width: 100%;
     height: 40px;
     text-align: center;
-
 }
+
 @media only screen and (max-width: 320px) {
     h1 {
         text-align: center;
     }
 }
 
-@media only screen and (max-width:
-320px){
+@media only screen and (min-width:
+768px){
     .alert-info {
-        text-align: center;
-
+    display: none;
     }
 }
 body > div.alert-info.hidden-on-desktop > a {
