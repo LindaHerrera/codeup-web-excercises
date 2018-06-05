@@ -22,14 +22,6 @@ img {
     margin: .5em;
 }
 
-@media screen and (max-width:320px) {
-    .nav-links {
-        height: 81px;
-        line-height: 20px;
-        text-align: center;
-    }
-}
-
 .alert-info a {
     background-color: #C0FFFF;
     display: block;
@@ -38,6 +30,14 @@ img {
     color: black;
     padding: 15px;
     border:2px solid black;
+@media screen and (max-width:320px) {
+    .nav-links {
+        height: 81px;
+        line-height: 20px;
+        text-align: center;
+    }
+}
+
 }
 @media screen and (min-width: 768px) {
     .hidden-on-desktop {
