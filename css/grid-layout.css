@@ -16,13 +16,13 @@
     width: 100%;
     background-color: #E1E1E1;
     border: 1px solid black;
+    margin: .5em;
 }
 
 .row:after {
     content: "";
     display: table;
     clear: both;
-    margin: .5em;
 }
 .column {
     float: left;
@@ -37,6 +37,10 @@
 }
 .one-fourth {
     width: 25%;
-    border-left:1px solid black;
+    border-left: 1px solid black;
 
+}
+.one-eigth {
+    width: 12.50%;
+   border-left: 1px solid black;
 }
