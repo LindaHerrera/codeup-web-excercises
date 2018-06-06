@@ -1,13 +1,42 @@
 * {
     margin: 0 auto;
     padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    margin: 0 auto;
+    width: 80%;
+    /*background-color: #E1E1E1;*/
+    max-width: 90em;
+    /*padding: 0;*/
+    /*line-height: 15px;*/
+}
+.row {
+    width: 100%;
+    background-color: #E1E1E1;
+    border: 1px solid black;
+}
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+    margin: .5em;
+}
+.column {
+    float: left;
 }
 .one-half {
-    margin: .5em auto;
-    width: 100%;
-    background-color: #cbffcd;
-    max-width: 1200px;
-    padding: 0;
-    line-height: 15px;
+    width: 50%;
+    border-left:1px solid black;
+}
+.one-third {
+    width: 33.33%;
+    border-left: 1px solid black;
+}
+.one-fourth {
+    width: 25%;
+    border-left:1px solid black;
 
 }
