@@ -57,5 +57,11 @@
 .second-eigth {
     width: 12.50%;
     border-left:1px solid black;
+}
+@media screen and (min-width: 325px)
+{
+    .row {
+        width: 100%;
+    }
 
 }
