@@ -2,9 +2,12 @@
     margin: 0 auto;
     padding: 0;
 }
-.row {
-    margin: 0 auto;
+.one-half {
+    margin: .5em auto;
     width: 100%;
     background-color: #cbffcd;
     max-width: 1200px;
+    padding: 0;
+    line-height: 15px;
+
 }
