@@ -1,6 +1,13 @@
-h1 {
-    background-image: url("http://java.codeup.com/examples/bootstrap/pizza.png");
-    background-position: center;
-    background-repeat: no-repeat;
+* {
+    margin: 0 auto;
+    padding: 0;
+}
+.container-fluid {
 
+    background-repeat: no-repeat;
+    padding: 0
+}
+
+.img {
+    width: 100%;
 }
