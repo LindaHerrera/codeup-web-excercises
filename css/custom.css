@@ -25,3 +25,7 @@ h1 {
     /*width: 200%;*/
     font-weight: unset;
 }
+.card-header {
+    background-color: #3B94D9;
+    color: #FFF
+}
