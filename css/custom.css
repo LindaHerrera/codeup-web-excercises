@@ -1,3 +1,6 @@
+body {
+    box-sizing: border-box;
+}
 
 .jumbotron {
     background-repeat: no-repeat;
@@ -6,6 +9,7 @@
     padding: 4.5em;
     width:100%;
     margin-top: 20px;
+    text-align: center;
 }
 .navbar {
     padding: .4em;
@@ -14,11 +18,10 @@
 
 h1 {
     background-color: rgba(233, 233, 233, 0.6);
-    padding-left: 10em;
+    float: none;
+    align-items: center;
+    /*padding-left: 10px;*/
     position: center;
-    width: 100%;
+    /*width: 200%;*/
     font-weight: unset;
 }
-/*body {*/
-    /*background-color: #848487;*/
-/*}*/
