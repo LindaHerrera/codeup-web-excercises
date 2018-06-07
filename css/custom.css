@@ -17,6 +17,7 @@ h1 {
     padding-left: 10em;
     position: center;
     width: 100%;
+    font-weight: unset;
 }
 /*body {*/
     /*background-color: #848487;*/
