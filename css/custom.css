@@ -3,8 +3,9 @@
     background-repeat: no-repeat;
     background-image: url("../img/pizza.png");
     background-size: 100%;
-    margin: 20px;
-    width:100%
+    padding: 4.5em;
+    width:100%;
+    margin-top: 20px;
 }
 .navbar {
     padding: .4em;
@@ -13,7 +14,9 @@
 
 h1 {
     background-color: rgba(233, 233, 233, 0.6);
-    position: relative;
+    padding-left: 10em;
+    position: center;
+    width: 100%;
 }
 body {
     background-color: #848487;
