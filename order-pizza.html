@@ -11,64 +11,72 @@
     <!-- Your custom styles go here -->
 </head>
 <body>
-    <main class="container">
+<main class="container-fluid">
     <nav class="navbar navbar-expand-md navbar-light bg-light">
-            <form class="form-inline" action="/action_page.php">
-                <ul class="navbar-nav">
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Pizza World</a>
-                    </li>
+        <form class="form-inline" action="/action_page.php">
+            <ul class="navbar-nav ">
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Pizza World</a>
+                </li>
 
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Order online</a>
-                    </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Order online</a>
+                </li>
 
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Menu</a>
-                    </li>
-                    <input class="form-control mr-sm-2" type="text" placeholder="Zip code">
-                    <button class="btn btn-success" type="submit">Search stores near you!</button>
-                </ul>
-            </form>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Menu</a>
+                </li>
+                <input class="form-control mr-sm-2" type="text" placeholder="Zip code">
+                <button class="btn btn-success" type="submit">Search stores near you!</button>
+            </ul>
+        </form>
+
+        <div class="row col-sm-3">
             <form class="navbar ml-auto">
-                <i class="fas fa-user p-3"></i>
-                <button class="btn btn-success" type="submit">Sign up</button>
+            <i class="fas fa-user p-3"></i>
+            <button class="btn btn-success" type="submit">Sign up</button>
             </form>
+        </div>
     </nav>
 
-<div class="jumbotron jumbotron-fluid d-none d-md-block">
+    <div class="jumbotron-fluid d-none d-md-block">
 
-    <h1 class="display-4">Welcome to Pizza World!</h1>
+        <h1 class="display-4">Welcome to Pizza World!</h1>
 
-</div>
-<h2>Build your own pizza!</h2>
-<ul class="nav nav-tabs">
-    <li class="nav-item">
-        <a class="nav-link active" href="#">
-            <span class="badge badge-pill badge-secondary">1</span>Size and crust</a>
-    </li>
-    <li class="nav-item">
-        <a class="nav-link active" href="#">
-            <span class="badge badge-pill badge-secondary">2</span>Cheese and Sauce</a>
-    </li>
-    <li class="nav-item">
-        <a class="nav-link active" href="#">
-            <span class="badge badge-pill badge-secondary">3</span>Toppings</a>
-    </li>
-</ul>
-
-
-<div class="card">
-    <div class="card-header">
-        Choose size and crust
     </div>
-    <div class="card-body">
-        <!--<a href="#" class="btn btn-primary">button</a>-->
-        <h5 class="card-title">title</h5>
+    <h2>Build your own pizza!</h2>
+    <ul class="nav nav-tabs">
+        <li class="nav-item">
+            <a class="nav-link active" href="#">
+                <span class="badge badge-pill badge-secondary">1</span>Size and crust</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link active" href="#">
+                <span class="badge badge-pill badge-secondary">2</span>Cheese and Sauce</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link active" href="#">
+                <span class="badge badge-pill badge-secondary">3</span>Toppings</a>
+        </li>
+    </ul>
+
+
+
+    <div class="tab-content" id="build-content">
+        <div class="card mt-3 tab-pane fade show active" id="size" role="tabpanel" aria-labelledby="size-tab">
+            <div class="card-header text-white bg-primary">
+                Choose size and crust
+            </div>
+        <div class="card-body">
+            <div class="card mt-3">
+                <div class="card-header bg-orange">Hand tossed</div>
+                <div class="card-body">
+                    Garlic seasoned crust with a rich, buttery taste.
+                </div>
+            </div>
+        </div>
+        </div>
     </div>
-
-
-</div>
 </main>
 
 <!-- Main page content -->

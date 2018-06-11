@@ -2,7 +2,7 @@ body {
     box-sizing: border-box;
 }
 
-.jumbotron {
+.jumbotron-fluid {
     background-repeat: no-repeat;
     background-image: url("../img/pizza.png");
     background-size: 100%;
@@ -20,12 +20,13 @@ h1 {
     background-color: rgba(233, 233, 233, 0.6);
     float: none;
     align-items: center;
-    /*padding-left: 10px;*/
     position: center;
-    /*width: 200%;*/
     font-weight: unset;
 }
 .card-header {
     background-color: #3B94D9;
     color: #FFF
+}
+h2 {
+    margin-top: 1em;
 }
