@@ -38,7 +38,6 @@
 // var googleRatePerHour =  prompt("How much does Google pay per hour?");
 // console.log(googleRatePerHour);
 //
-//
 // var amazonRatePerHour = prompt("How much does Amazon pay per hour?");
 // console.log(amazonRatePerHour);
 //
@@ -59,16 +58,40 @@
 
 
 // ----student enrollment-----
-
+//
 alert("Now for some True or False questions!");
 
-var scheduleConflict = prompt("Class will not conflict with my schedule outside of class.")
-console.log(scheduleConflict);
+// //************ why is this answer always in the result alert??*******
 
-var classNotFull = prompt("The class roster will be empty at time of enrollment.");
+var classNotFull = confirm("The class roster will be empty at time of enrollment.");
 console.log(classNotFull);
+var scheduleConflict = confirm("Class will not conflict with my schedule outside of class.");
+console.log(scheduleConflict);
+//
 
-var studentEnrolled = classNotFull && scheduleConflict;
+var studentEnrolled = scheduleConflict && classNotFull;
 console.log(studentEnrolled);
 
 alert("It is " + (studentEnrolled) + " that you can now enroll.");
+
+
+
+// -----discount offered------
+
+var numberOfItemsForDiscount = 2;
+console.log(numberOfItemsForDiscount);
+
+var numberOfItems = prompt("How many items do you have?");
+console.log(numberOfItems);
+
+var offerNotExpired = prompt("True or False: My offer is not expired.");
+console.log(offerNotExpired);
+
+var premiumMember = prompt("True or False: I am a Premium Member.");
+console.log(premiumMember);
+//
+// ********result SHOULD be true but returns a false******
+var productDiscountApplied = premiumMember || (numberOfItems >= numberOfItemsForDiscount && offerNotExpired);
+console.log(productDiscountApplied);
+
+// **best way to use an alert?**
