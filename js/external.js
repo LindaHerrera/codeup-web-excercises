@@ -12,13 +12,13 @@
 // alert("Woah! " +(color) + " is my favorite color too!");
 
 // ------movie rental-------
-
+//
 // var rentalDayPerDollars = prompt("What\'s the cost to rent a movie per day?");
 // console.log(rentalDayPerDollars);
 //
 // alert("Awh yeah!  $" + (rentalDayPerDollars) + " thanks for refreshing my memory!");
 //
-// var littleMermaidDays = prompt ("How many days did you rent the Little Mermaid?");
+// var littleMermaidDays = prompt("How many days did you rent The Little Mermaid?");
 // console.log(littleMermaidDays);
 //
 // var brotherBearDays = prompt("How many days did you rent Brother Bear?");
@@ -34,7 +34,7 @@
 
 
 // ----weekly rate-----
-
+//
 // var googleRatePerHour =  prompt("How much does Google pay per hour?");
 // console.log(googleRatePerHour);
 //
@@ -59,18 +59,18 @@
 
 // ----student enrollment-----
 //
-// alert("Now for some True or False questions!");
-////
-// var classNotFull = confirm("The class roster will be empty at time of enrollment.");
-// console.log(classNotFull);
-// var scheduleConflict = confirm("Class will not conflict with my schedule outside of class.");
-// console.log(scheduleConflict);
-// //
+alert("Now for some True or False questions!");
 //
-// var studentEnrolled = scheduleConflict && classNotFull;
-// console.log(studentEnrolled);
+var classNotFull = confirm("The class roster will be empty at time of enrollment.");
+console.log(classNotFull);
+var scheduleConflict = confirm("Class will not conflict with my schedule outside of class.");
+console.log(scheduleConflict);
 //
-// alert("It is " + (studentEnrolled) + " that you can now enroll.");
+
+var studentEnrolled = scheduleConflict && classNotFull;
+console.log(studentEnrolled);
+
+alert("It is " + (studentEnrolled) + " that you can now enroll.");
 
 
 
