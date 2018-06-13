@@ -59,39 +59,36 @@
 
 // ----student enrollment-----
 //
-alert("Now for some True or False questions!");
-
-// //************ why is this answer always in the result alert??*******
-
-var classNotFull = confirm("The class roster will be empty at time of enrollment.");
-console.log(classNotFull);
-var scheduleConflict = confirm("Class will not conflict with my schedule outside of class.");
-console.log(scheduleConflict);
+// alert("Now for some True or False questions!");
+////
+// var classNotFull = confirm("The class roster will be empty at time of enrollment.");
+// console.log(classNotFull);
+// var scheduleConflict = confirm("Class will not conflict with my schedule outside of class.");
+// console.log(scheduleConflict);
+// //
 //
-
-var studentEnrolled = scheduleConflict && classNotFull;
-console.log(studentEnrolled);
-
-alert("It is " + (studentEnrolled) + " that you can now enroll.");
-
-
-
-// -----discount offered------
-
-var numberOfItemsForDiscount = 2;
-console.log(numberOfItemsForDiscount);
-
-var numberOfItems = prompt("How many items do you have?");
-console.log(numberOfItems);
-
-var offerNotExpired = prompt("True or False: My offer is not expired.");
-console.log(offerNotExpired);
-
-var premiumMember = prompt("True or False: I am a Premium Member.");
-console.log(premiumMember);
+// var studentEnrolled = scheduleConflict && classNotFull;
+// console.log(studentEnrolled);
 //
-// ********result SHOULD be true but returns a false******
-var productDiscountApplied = premiumMember || (numberOfItems >= numberOfItemsForDiscount && offerNotExpired);
-console.log(productDiscountApplied);
+// alert("It is " + (studentEnrolled) + " that you can now enroll.");
 
-// **best way to use an alert?**
+
+
+// // -----discount offered------
+//
+// var numberOfItemsForDiscount = 2;
+// console.log(numberOfItemsForDiscount);
+//
+// var numberOfItems = prompt("How many items do you have?");
+// console.log(numberOfItems);
+//
+// var offerNotExpired = prompt("True or False: My offer is not expired.");
+// console.log(offerNotExpired);
+//
+// var premiumMember = prompt("True or False: I am a Premium Member.");
+// console.log(premiumMember);
+// //
+// // ********result SHOULD be true but returns a false******
+// var productDiscountApplied = premiumMember || (numberOfItems >= numberOfItemsForDiscount && offerNotExpired);
+// console.log(productDiscountApplied);
+
