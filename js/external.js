@@ -1,5 +1,7 @@
 'use strict';
 
+// ---sample exercise---
+
 // console.log("Hello from external JavaScript");
 //
 // alert("Welcome to my Website!");
@@ -9,6 +11,7 @@
 //
 // alert("Woah! " +(color) + " is my favorite color too!");
 
+// ------movie rental-------
 
 // var rentalDayPerDollars = prompt("What\'s the cost to rent a movie per day?");
 // console.log(rentalDayPerDollars);
@@ -30,6 +33,7 @@
 // alert("Your total cost is $" + (totalRentalCost));
 
 
+// ----weekly rate-----
 
 // var googleRatePerHour =  prompt("How much does Google pay per hour?");
 // console.log(googleRatePerHour);
@@ -52,3 +56,19 @@
 // totalPayment += facebookRatePerHour * facebookhours
 //
 // alert("Your total payment for the week for working for all three companies is $" +(totalPayment) + "!");
+
+
+// ----student enrollment-----
+
+alert("Now for some True or False questions!");
+
+var scheduleConflict = prompt("Class will not conflict with my schedule outside of class.")
+console.log(scheduleConflict);
+
+var classNotFull = prompt("The class roster will be empty at time of enrollment.");
+console.log(classNotFull);
+
+var studentEnrolled = classNotFull && scheduleConflict;
+console.log(studentEnrolled);
+
+alert("It is " + (studentEnrolled) + " that you can now enroll.");
