@@ -13,8 +13,7 @@
 function sayHello(name) {
     return "Hello " + name +"!";
 }
-
-console.log(sayHello("Codeup"));
+// console.log(sayHello(prompt("What\'s your name?")));
 
 
 /**
@@ -24,8 +23,6 @@ console.log(sayHello("Codeup"));
  *
  * console.log 'helloMessage' to check your work
  */
-
-sayHello("Linda");
 
 var helloMessage = sayHello("Linda");
 
@@ -39,6 +36,11 @@ console.log(helloMessage);
  * variable to the 'sayHello' function. You should see the same output in the
  * console.
  */
+
+var myName = "Linda";
+console.log(sayHello(myName));
+
+
 
 // Don't modify the following line, it generates a random number between 1 and 3
 // and stores it in a variable named random
@@ -62,6 +64,15 @@ var random = Math.floor((Math.random() * 3) + 1);
  * number)
  */
 
+
+function isTwo(number) {
+    console.log(number);
+    return 2 === number;
+}
+
+console.log(isTwo(random));
+
+
 /**
  * TODO:
  * Create a function named 'calculateTip' to calculate a tip on a bill at a
@@ -73,6 +84,12 @@ var random = Math.floor((Math.random() * 3) + 1);
  * > calculateTip(0.25, 25.50) // returns 6.37
  * > calculateTip(0.15, 33.42) // returns 5.013
  */
+
+// function calculateTip(tipPercentage, billtotal) {
+//     var tipInValue = tipPercentage / 100 ; // 0.2
+//     return billtotal * tipinValue;
+// }
+//     console.log(calculateTip(20, 100));
 
 /**
  * TODO:
