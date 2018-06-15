@@ -16,10 +16,51 @@
  * Can you refactor your code to use functions?
  */
 
+// if (confirm ("Would you like to enter a number?")) {
+//     var number = prompt("Okay! Let\'s have your number!");
+// }
+
+// if (number = isNaN) {
+//     alert("That's not a number");
+// }
+// ************
+// var willEnterNum = confirm("will you enter a number");
+// console.log(willEnterNum);
+//
+// if (willEnterNum) {
+//     var userNum = prompt("Please enter a numbuh");
+//     if () {
+//
+//     }else
+// }    alert("")
+
+
+// function isOdd(x) {
+//     return x%2 !== 0;
+// }
+
+
+
+
+
+// confirm("Would you like to enter a number?");
+// var number = prompt("Great! What number would you like to use?");
+//
+// function evenOdd(number) {
+//     if (number % 2==0) {
+//         alert("You typed an even number!");
+//
+//     } else if ((number % 2) != 0) {
+//         alert("You typed an odd number!");
+//     }
+// }
+
+
+
 /* ########################################################################## */
 
 /**
- * TODO:
+ * TODO
  * Create a function named `analyzeColor` that accepts a string that is a color
  * name as input. This function should return a message that related to that
  * color. Only worry about the colors defined above, if the color passed is not
@@ -35,6 +76,20 @@
  * Test your function by passing various string literals to it and
  * console.logging the function's return value
  */
+
+function analyzeColor(color) {
+    if (color === "blue"){
+        return color + "is the color of the sky";
+    } else if { color === "red");
+        return "strawberries are " + color;
+    }  else if ( color == "cyan";)
+        return
+
+}
+
+console.log(analyzeColor("blue"));
+console.log(analyzeColor("red"));
+console.log(analyzeColor("cyan"));
 
 // Don't change the next two lines!
 // These lines create two variables for you:
