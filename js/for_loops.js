@@ -23,8 +23,8 @@ function showMultiplicationTable(number){
     var a = 7;
 
     for (var i = 1; i<=10 ; i++) {
-        a * i;
-        console.log(a+ "*" +i+ "=") ;
+       var b = i * a;
+        console.log(a+ "*" +i+ "="+b) ;
     }
 
 }
