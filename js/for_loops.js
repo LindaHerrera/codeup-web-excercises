@@ -24,3 +24,9 @@ for (var i = 0; i < 10; i++ ) {
         console.log (randomNum + " odd");
     }
 }
+
+for (var i = 1 ; i <= 9 ; i++ ) {
+    var str = i.toString()
+    var repeat = str.repeat(i);
+    console.log(repeat);
+}
