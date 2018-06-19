@@ -4,7 +4,6 @@
 
 
 
-
 function showMultiplicationTable(number){
 
     for (var i = 1; i <= 10 ; i++) {
@@ -13,6 +12,7 @@ function showMultiplicationTable(number){
     }
 
 }
+
 
 
 
@@ -25,8 +25,15 @@ for (var i = 0; i < 10; i++ ) {
     }
 }
 
+
+
+
 for (var i = 1 ; i <= 9 ; i++ ) {
     var str = i.toString()
     var repeat = str.repeat(i);
     console.log(repeat);
+}
+
+for (var i = 100 ; i >= 5 ; i = i - 5 ){
+    console.log(i);
 }
