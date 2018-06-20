@@ -13,7 +13,7 @@
      */
         // var person = {
         //         firstName: "Linda",
-        //         lastName: "Herrera",
+        //         lastName: "Herrera"
         // };
         //
         //
@@ -30,17 +30,17 @@
      * Example
      * > console.log(person.sayHello()) // "Hello from Rick Sanchez!"
      */
-    var person = {
-        firstName: "Linda",
-        lastName: "Herrera",
-        sayHello: function(){
-            console.log("Hello from " + this.firstName + " "  + this.lastName + "!");
-
-        }
-    };
-    console.log(person.firstName);
-    console.log(person.lastName);
-    console.log(person.sayHello() );
+    // var person = {
+    //     firstName: "Linda",
+    //     lastName: "Herrera",
+    //     sayHello: function(){
+    //         return "Hello from " + this.firstName + " "  + this.lastName + "!";
+    //
+    //     }
+    // };
+    // console.log(person.firstName);
+    // console.log(person.lastName);
+    // console.log(person.sayHello() );
 
 
     /** TODO:
@@ -57,11 +57,25 @@
      * and console.log the relevant messages for each person
      */
 
+
+
     // var shoppers = [
     //     {name: 'Cameron', amount: 180},
     //     {name: 'Ryan', amount: 250},
     //     {name: 'George', amount: 320}
     // ];
+    //
+    // shoppers.forEach(function(shopper) {
+    //     if (shopper.amount > 200) {
+    //         var discount = .12;
+    //     }
+    //     var output = "name" +shopper.name;
+    //     output += "amount" + shopper.amount;
+    //     output += "discount: " + discount;
+    //     output += "total: " + (shopper.amount - discount);
+    //
+    //     console.log(output);
+    // })
 
     /** TODO:
      * Create an array of objects that represent books and store it in a
@@ -76,6 +90,17 @@
      * > console.log(books[0].author.lastName) // "Adams"
      */
 
+        var books =  [
+        {title: "Salmon of Doubt", author:{firstName: "Doug", lastName: "Adams"}},
+        {title: "Walk Away", author:{firstName: "Cory", lastName: "Doctorow"}},
+        {title: "History of Time", author:{firstName: "Stephen", lastName: "Hawking"}},
+
+    ]
+    console.log(books);
+
+        for (var i=0; i<= books.length; i++) {
+            console.log("book")
+        }
     /**
      * TODO:
      * Loop through the books array and output the following information about
