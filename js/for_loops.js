@@ -24,6 +24,7 @@ for (var i = 0; i < 10; i++ ) {
         console.log (randomNum + " odd");
     }
 }
+// ^^^ you could also create a variable called message and assign both console logs to the message variable and just console log the variable of message --> console.log(message)**not a string
 
 
 
