@@ -98,8 +98,16 @@
     ]
     console.log(books);
 
-        for (var i=0; i<= books.length; i++) {
-            console.log("book")
+        // for (var i=0; i<= books.length; i++) {
+        //     console.log("book")
+        // }
+
+        books.forEach(function(book, i){
+            console.log("book #" + ( i+1));
+            console.log("title " + books[i].title);
+            console.log("authorc" + books[i].author.firstName + " " + books[i].author);
+            console.log("---");
+
         }
     /**
      * TODO:
