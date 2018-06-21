@@ -29,9 +29,6 @@
 
 var area = (doRounding) ? Math.round(this.getArea()) : this.getArea();
 
-}
-
-
 
 
 
@@ -47,7 +44,7 @@ var area = (doRounding) ? Math.round(this.getArea()) : this.getArea();
     // TODO: Change the radius of the circle to 5.
 
     // log info about the circle
-    circle.radius
+    console.log(circle.radius);
     console.log("Raw circle information");
     circle.logInfo(false);
     console.log("Circle information rounded to the nearest whole number");
