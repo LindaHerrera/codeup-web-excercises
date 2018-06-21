@@ -82,7 +82,7 @@ function analyzeColor(color) {
         return color + "is the color of the sky";
     } else if { color === "red");
         return "strawberries are " + color;
-    }  else if ( color == "cyan";)
+    }  else ( color == "cyan";)
         return
 
 }
