@@ -93,7 +93,7 @@
         var books =  [
         {title: "Salmon of Doubt", author:{firstName: "Doug", lastName: "Adams"}},
         {title: "Walk Away", author:{firstName: "Cory", lastName: "Doctorow"}},
-        {title: "History of Time", author:{firstName: "Stephen", lastName: "Hawking"}},
+        {title: "History of Time", author:{firstName: "Stephen", lastName: "Hawking"}}
 
     ]
     console.log(books);
