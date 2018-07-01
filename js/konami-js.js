@@ -1,28 +1,12 @@
 "use strict";
 
-/*
- $(document).keyup(function(event){
-     console.log(event.keyCode);
- });
+
+ // $(document).keyup(function(event){
+ //     console.log(event.keyCode);
+ // });
 
 
- target area; body of the page, when keys are pressed, compare EACH event to this string:
-         xx xx xx xx xx  x x x. if string matches this
-             then do this
 
- https://stackoverflow.com/questions/3278556/for-loop-with-if-else-statement
-*/
-
-// $(document).keyup(function(event){
-//     console.log(event.keyCode);
-//
-// });
-//
-//
-// // loop to compare to my array
-// // if true do this
-//
-// // up == 38
 
 $(document).ready(function(event){
 
