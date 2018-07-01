@@ -1,0 +1,14 @@
+
+.test {
+    text-align: center;
+    font-family: "American Typewriter";
+    font-weight: lighter;
+    font-size: xx-large;
+}
+
+#takei {
+    display: none;
+    position: absolute;
+    left: 0px;
+    bottom: 0px;
+}

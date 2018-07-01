@@ -24,7 +24,7 @@
 //
 // // up == 38
 
-$(document).ready(function(){
+$(document).ready(function(event){
 
     // Array sequence for correct Konami code
     var code = [38, 38, 40, 40, 37, 39, 37,39, 66, 65, 13];
@@ -43,7 +43,9 @@ $(document).ready(function(){
 
         }
         if (counter == code.length) {
-            console.log("pass");
+            $("#takei").slideToggle("900", function () {
+                console.log("okay");
+            })
         }
     });
 })
