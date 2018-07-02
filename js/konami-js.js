@@ -27,7 +27,7 @@ $(document).ready(function(event){
 
         }
         if (counter == code.length) {
-            $("#takei").show("slow")
+            $("#Gtakei").show("slow")
                 .animate({left: "+=500"}, 900)
                 .queue(function(){
                     $(this).addClass("slow").dequeue();
