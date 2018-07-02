@@ -6,6 +6,12 @@
  // });
 
 
+$(".top, .top2").hover(function (){
+    $(this).css("color", "red");
+}, function (){
+    $(this).css("color", "#cdcdb9");
+});
+
 
 
 $(document).ready(function(event){
@@ -28,11 +34,11 @@ $(document).ready(function(event){
         }
         if (counter == code.length) {
             $("#Gtakei").show("slow")
-                .animate({left: "+=500"}, 900)
+                .animate({left: "+=500"}, 1000)
                 .queue(function(){
                     $(this).addClass("slow").dequeue();
                 })
-                .animate({left: "-=900"}, 900)
+                .animate({left: "-=900"}, 1000)
                 .queue(function(){
                     $(this).removeClass("slow").dequeue;
                 })
