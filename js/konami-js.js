@@ -32,7 +32,7 @@ $(document).ready(function(event){
                 .queue(function(){
                     $(this).addClass("slow").dequeue();
                 })
-                .animate({left: "-=500"}, 900)
+                .animate({left: "-=900"}, 900)
                 .queue(function(){
                     $(this).removeClass("slow").dequeue;
                 })
