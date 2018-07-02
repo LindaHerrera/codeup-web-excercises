@@ -27,9 +27,18 @@ $(document).ready(function(event){
 
         }
         if (counter == code.length) {
-            $("#takei").slideToggle("900", function () {
+            $("#takei").show("slow")
+                .animate({left: "+=500"}, 900)
+                .queue(function(){
+                    $(this).addClass("slow").dequeue();
+                })
+                .animate({left: "-=500"}, 900)
+                .queue(function(){
+                    $(this).removeClass("slow").dequeue;
+                })
+            $("#sound").trigger("play");
 
-            })
+
         }
     });
 })

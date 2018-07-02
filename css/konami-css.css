@@ -1,5 +1,8 @@
+body {
+    background-color: darkseagreen;
+}
 
-.test {
+.top {
     padding-top: 20px;
     text-align: center;
     font-family: "American Typewriter";
@@ -14,6 +17,6 @@
     bottom: 0px;
 }
 
-/*#sound {*/
-    /*display:none;*/
-/*}*/
+#sound {
+    display:none;
+}
