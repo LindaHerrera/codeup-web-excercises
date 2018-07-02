@@ -12,11 +12,16 @@ body, html {
 }
 
 .top {
-    margin-top: 0px;
+    margin-left: 20px;
+    top: 20%;
+    left: 35%;
+    position: absolute;
     text-align: center;
-    font-family: "American Typewriter";
-    font-weight: lighter;
-    font-size: xx-large;
+    font-family: "Cuckoo";
+    color: #cdcdb9;
+    text-shadow: black 0.3em 0.3em 0.3em;
+    -webkit-text-stroke: 1.25px black;
+    font-size: 60px;
 }
 
 #Gtakei {
