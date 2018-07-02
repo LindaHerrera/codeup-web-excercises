@@ -28,9 +28,11 @@ $(document).ready(function(event){
         }
         if (counter == code.length) {
             $("#takei").slideToggle("900", function () {
-                console.log("okay");
+
             })
         }
     });
 })
+
+
 

@@ -1,5 +1,6 @@
 
 .test {
+    padding-top: 20px;
     text-align: center;
     font-family: "American Typewriter";
     font-weight: lighter;
@@ -12,3 +13,7 @@
     left: 0px;
     bottom: 0px;
 }
+
+/*#sound {*/
+    /*display:none;*/
+/*}*/
