@@ -5,8 +5,8 @@
  // });
 
 
-// for page title
-$(".top, .top2").hover(function (){
+// for page title events
+$(".ko, .nami, .code").hover(function (){
     $(this).css("color", "red");
 }, function (){
     $(this).css("color", "#cdcdb9");

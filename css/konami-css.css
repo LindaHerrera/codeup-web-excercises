@@ -10,32 +10,62 @@ body, html {
     background-repeat: no-repeat;
     background-size: cover;
 }
+/*title styling*/
 
-.top {
+.ko {
     margin-left: 20px;
     top: 20%;
-    left: 34%;
+    left: 33%;
     position: absolute;
     text-align: center;
     font-family: "Cuckoo";
     color: #cdcdb9;
     text-shadow: black 0.3em 0.3em 0.3em;
     -webkit-text-stroke: 1.25px black;
-    font-size: 60px;
+    font-size: 69px;
 }
 
-.top2 {
+.nami {
     margin-left: 20px;
     top: 20%;
-    left: 49%;
+    left: 39%;
     position: absolute;
     text-align: center;
     font-family: "Cuckoo";
     color: #cdcdb9;
     text-shadow: black 0.3em 0.3em 0.3em;
     -webkit-text-stroke: 1.25px black;
-    font-size: 60px;
+    font-size: 69px;
 }
+
+.code {
+    margin-left: 20px;
+    top: 20%;
+    left: 50%;
+    position: absolute;
+    text-align: center;
+    font-family: "Cuckoo";
+    color: #cdcdb9;
+    text-shadow: black 0.3em 0.3em 0.3em;
+    -webkit-text-stroke: 1.25px black;
+    font-size: 69px;
+}
+
+.sub {
+    margin-left: 20px;
+    top: 33%;
+    left: 37%;
+    position: absolute;
+    text-align: center;
+    font-family: "Cuckoo";
+    color: #cdcdb9;
+    text-shadow: black 0.3em 0.3em 0.3em;
+    /*-webkit-text-stroke: 1.25px black;*/
+    font-size: 20px;
+}
+
+/*konami styling*/
+
 #Gtakei {
     display: none;
     position: absolute;
