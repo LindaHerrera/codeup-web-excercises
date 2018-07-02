@@ -1,11 +1,11 @@
 "use strict";
 
-
  // $(document).keyup(function(event){
  //     console.log(event.keyCode);
  // });
 
 
+// for page title
 $(".top, .top2").hover(function (){
     $(this).css("color", "red");
 }, function (){
@@ -14,13 +14,13 @@ $(".top, .top2").hover(function (){
 
 
 
-$(document).ready(function(event){
-
-    // Array sequence for correct Konami code
+    // array for Konami code
     var code = [38, 38, 40, 40, 37, 39, 37,39, 66, 65, 13];
+
 
     var counter = 0;
 
+    // compare input to array
     $(document).keyup(function(event){
         console.log(event.keyCode);
 
@@ -47,7 +47,7 @@ $(document).ready(function(event){
 
         }
     });
-})
+
 
 
 
