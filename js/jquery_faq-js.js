@@ -1,6 +1,6 @@
 "use strict";
 
-$(function(){
+$(document).ready(function(){
 
 //shows dd's with class of invisible when button is clicked
     $(".show").click(function (){
@@ -26,7 +26,18 @@ $(function(){
 //when any li is clicked the first li of that list changes color
     $("li").click(function(){
         $(this).parent().children().first().css("color", "blue");
-    })
+    });
+//hides div with newletter when x is clicked
+    $("span").click(function (){
+        $("div").hide();
+    });
+//toggles li's with a slide effect when h3 is clicked
+    $("h3").click(function(){
+       $("li").parent().slideToggle();
+    });
+
+
+
 
 
 });
