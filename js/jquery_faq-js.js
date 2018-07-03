@@ -9,7 +9,6 @@ $(function(){
     });
 
     $(".sty").click(function(){
-
         $("ul li:last-child").css("background-color", "yellow");
     });
 
