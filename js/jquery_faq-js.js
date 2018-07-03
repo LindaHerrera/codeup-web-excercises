@@ -7,6 +7,12 @@ $(".show").click(function (){
 
 });
 
+$(".sty").click(function(){
+
+    $("li").last().css("background-color", "yellow");
+})
+
+
 
 
 });
