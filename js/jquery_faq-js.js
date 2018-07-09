@@ -35,8 +35,11 @@ $(document).ready(function(){
     $("h3").click(function(){
        $("li").parent().slideToggle();
     });
-
-
+//fade in h2 after 8secs
+    setTimeout(
+        function(){
+            $("h2").fadeIn();
+        },5000);
 
 
 
