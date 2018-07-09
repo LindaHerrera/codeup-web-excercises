@@ -29,17 +29,31 @@
         // TODO: Create an ajax GET request for /data/inventory.json
 
         $.get("data/inventory.json").done(function(data,status,jqXhr){
-            alert("Call complete");
+            // alert("Call complete");
             console.log("Request status", + status);
             console.log(data);
-        })
+        });
 
 
         // TODO: Take the data from inventory.json and append it to the products table
         //       HINT: Your data should come back as a JSON object; use console.log() to inspect
         //             its contents and fields
         //       HINT: You will want to target #insertProducts for your new HTML elements
-    })();
+
+            function fillTable(inventory) {                 //function that takes in inventory or array of objects
+            var output = "";                                //output will be string so we create variable of empty string
+            output += "<tr>";                               //this is the beginning of how we want our output structured
+            inventory.forEach(function(product){            //loop through each item and list them
+                output += "<th>"+ inventory.title+ "</th>" //structure for how each item will be listed in table
+            });
+                output += "</tr>";                          // closing tag for table structure
+                return output;                              // return product in table form
+
+                $("#insertProducts").html(fillTable(inventory.json));  //where to fill table..how to call unnamed array
+                }
+            })
+
+    ();
 </script>
 
 </body>
