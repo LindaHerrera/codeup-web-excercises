@@ -20,6 +20,7 @@
     <tbody id="insertProducts"></tbody>
 </table>
 
+<button>Refresh</button>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
 
 <script>
@@ -28,29 +29,61 @@
         "use strict";
         // TODO: Create an ajax GET request for /data/inventory.json
 
-        $.get("data/inventory.json").done(function(data,status,jqXhr){
-            // alert("Call complete");
-            console.log("Request status", + status);
-            console.log(data);
-        });
+        // $.get("data/inventory.json").done(function(data,status,jqXhr){
+        //     // alert("Call complete");
+        //     console.log("Request status", + status);
+        //     console.log(data);
+        // });
+        //      ^^^ this was able to retrieve the json information and showed in the console, but ended up being more confusing
 
+        var tableBody = $("insertProducts");            //create variable with the table body since this is where the list will go
+
+        function getInventory(){                        //function named getInventory with no parameters
+            tableBody.fadeOut();                        //hides the body of the table
+            tableBody.html('');                         //returns content of first matched element since there are no parameters set which would be empty table body
+            $.get("data/inventory.json", function (tools){  //get the info from the json file and call the inventory by category of tool    ?why by category?
+                tools.forEach(function(item){           //loop the items through so we can see them all
+                    addRow(item);                        //calling function that we havn't made yet             ?how does this happen in the process?
+                });
+                tableBody.fadeIn();                     //how we get the table to appear, now filled with content
+            });
+        }
 
         // TODO: Take the data from inventory.json and append it to the products table
         //       HINT: Your data should come back as a JSON object; use console.log() to inspect
         //             its contents and fields
         //       HINT: You will want to target #insertProducts for your new HTML elements
 
-            function fillTable(inventory) {                 //function that takes in inventory or array of objects
-            var output = "";                                //output will be string so we create variable of empty string
-            output += "<tr>";                               //this is the beginning of how we want our output structured
-            inventory.forEach(function(product){            //loop through each item and list them
-                output += "<th>"+ inventory.title+ "</th>" //structure for how each item will be listed in table
-            });
-                output += "</tr>";                          // closing tag for table structure
-                return output;                              // return product in table form
+            // function fillTable(inventory) {                 //function that takes in inventory or array of objects
+            // var output = "";                                //output will be string so we create variable of empty string
+            // output += "<tr>";                               //this is the beginning of how we want our output structured
+            // inventory.forEach(function(product){            //loop through each item and list them
+            //     output += "<th>"+ inventory.title+ "</th>" //structure for how each item will be listed in table
+            // });
+            //     output += "</tr>";                          // closing tag for table structure
+            //     return output;                              // return product in table form
+            //
+            //     $("#insertProducts").html(fillTable(inventory.json));  //where to fill table..how to call unnamed array
+            //     }
 
-                $("#insertProducts").html(fillTable(inventory.json));  //where to fill table..how to call unnamed array
-                }
+        //solution from earlier warm up. items showed as array in console but never populated in table.
+
+        function addRow(item) {                             //function called addRow that takes an item as a parameter
+            var html = "<tr>";                              // variable called html that holds an open tr tag
+            html += "<td>" + item.title + "</td>";           // that open tr tag now has a child of open td with the parameter with the title of product and close tag
+            html += "<td>" + item.quantity + "</td>";       // parameter of quantity inside table data row
+            html += "<td>" + item.price + "</td>";          //same for price
+            html += "<td>" + item.category + "</td>";       // same for category
+            html += "</tr>";                                // closing table row
+            tableBody.append(html);                         // inserts html variable as the last child of each element
+        }
+            getInventory();
+            $('refresh').click(function(e){
+                e.preventDefault();
+                getInventory();
+            })
+        //solution from instructors not working. no error codes in console.
+
             })
 
     ();
