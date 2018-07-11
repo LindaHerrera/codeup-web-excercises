@@ -72,11 +72,10 @@
             var html = "<tr>";                              // variable called html that holds an open tr tag
             html += "<td>" + item.title + "</td>";           // that open tr tag now has a child of open td with the parameter with the title of product and close tag
             html += "<td>" + item.quantity + "</td>";       // parameter of quantity inside table data row
-            html += "<td>" + item.price + "</td>";          //same for price
+            html += "<td>$" + item.price + "</td>";          //same for price
             html += "<td>" + item.categories + "</td>";       // same for category
             html += "</tr>";                                // closing table row
             tableBody.append(html);                         // inserts html variable as the last child of each element
-            console.log(html);
         }
             getInventory();
             $("#refresh").click(function(){
@@ -91,4 +90,4 @@
 </body>
 </html>
 
-                        <!--solution wasn't working because the button wasn't given an id and the variable of tableBody was missing the #-->
+                        <!--solution wasn't working because the button wasn't given an id and the variable of tableBody was missing the # when trying to call-->
