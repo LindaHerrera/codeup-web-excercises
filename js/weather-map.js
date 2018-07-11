@@ -1,4 +1,3 @@
-$(document).ready(function(){
 "use strict";
 
     var jgXhr = $.get("https://api.openweathermap.org/data/2.5/forecast", {
@@ -10,7 +9,7 @@ $(document).ready(function(){
 
 
     var tableBody = $("#rowOne");
-    // var pict = "<img src = "http://openweathermap.org/img/w/>";
+    var pict = "<img src = 'http://openweathermap.org/img/w/02d.png'>";
 
 
 
@@ -21,6 +20,7 @@ $(document).ready(function(){
             // console.log(hum);
             var html = "<div class='card-body card d-inline float-left text-center mx-auto w-25 p-2 my-3'>";
             html += "<div>" +"<strong>"+"<h2>"+Math.round(data.list[i].main.temp)+ "&deg"+"</h2>"+"</strong>" + "</div>";
+            html += "<div>" + pict +"</div>";
             html += "<div>" + "<strong>Clouds: </strong>"+ data.list[i].weather[0].description + "</div>";     //clouds in array so place array name in array brackets
             html += "<div>" + "<strong>Humidity: </strong>"+ data.list[i].main.humidity +"%"+ "</div>";
             html += "<div>" + "<strong>Wind: </strong>"+ Math.round(data.list[i].wind.speed) +"mph"+"</div>";
@@ -29,6 +29,30 @@ $(document).ready(function(){
             tableBody.append(html);
         }
             $("#city-name").append(data.city.name);
+
+
+        function initMap() {
+        var mapCanvas = document.getElementById('map');
+        var mapOptions = {
+            zoom: 8,
+            // This sets the center of the map at our location
+            center: {
+                lat: 29.424122,
+                lng: -98.493628
+            }
+        };
+        // Render the map
+        var map = new google.maps.Map(mapCanvas, mapOptions);
+        var marker = new google.maps.Marker({
+            position: {
+                lat: 29.424122,
+                lng: -98.493628
+            },
+            map: map
+        });
+    }
+    initMap();
+
         });
 
 
@@ -38,6 +62,5 @@ $(document).ready(function(){
 
 
 
-    });
 
 
