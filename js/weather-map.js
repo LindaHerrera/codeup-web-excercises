@@ -7,27 +7,22 @@ $(document).ready(function(){
         cnt: "17"                               //count set to 17 so we don't go through all 40 index
     });
 
-    var tableBody = $(".col-sm");
+    var tableBody = $("#rowOne");
 
     jgXhr.done(function(data){
-        // console.log(data);
+        console.log(data);
         for(var i = 0; i < data.list.length; i+= 8){        //loop until end of object and only give every 8th
             // var hum = data.list[i].main.humidity;        //humidity for 3 days in variable
             // console.log(hum);
-            var html = "<div>";
-            html += "<div>" + data.list[i].main.temp + "</div>";
-            html += "<div>" + data.list[i].main.humidity + "</div>";
+            var html = "<div class='card-body card d-inline float-left text-center mx-auto w-25 p-2 my-3'>";
+            html += "<div>" +"Temp "+ data.list[i].main.temp + "</div>";
+            html += "<div>" + "Humidity "+ data.list[i].main.humidity +"%"+ "</div>";
+            html += "<div>" + "Wind Speed "+ data.list[i].wind.speed + "</div>";
             html += "</div>";
             tableBody.append(html);
         }
+            $("#city-name").append(data.city.name);
         });
-
-
-
-
-
-
-
 
 
 
