@@ -7,7 +7,7 @@ $(document).ready(function(){
         cnt: "17"                               //count set to 17 so we don't go through all 40 index
     });
 
-    var tableBody = $(".one");
+    var tableBody = $(".col-sm");
 
     jgXhr.done(function(data){
         // console.log(data);
