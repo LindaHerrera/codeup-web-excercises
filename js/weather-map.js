@@ -7,15 +7,18 @@ $(document).ready(function(){
         cnt: "17"                               //count set to 17 so we don't go through all 40 index
     });
 
+    var tableBody = $(".one");
+
     jgXhr.done(function(data){
         // console.log(data);
         for(var i = 0; i < data.list.length; i+= 8){        //loop until end of object and only give every 8th
-            var hum = data.list[i].main.humidity;        //humidity for 3 days in variable
+            // var hum = data.list[i].main.humidity;        //humidity for 3 days in variable
             // console.log(hum);
-            var html = "<tr>";
-            html += "<td>" + data.list[i].main.temp + "</td>";
-            html += "<td>" + hum + "</td>";
-            html += "</tr>";
+            var html = "<div>";
+            html += "<div>" + data.list[i].main.temp + "</div>";
+            html += "<div>" + data.list[i].main.humidity + "</div>";
+            html += "</div>";
+            tableBody.append(html);
         }
         });
 
@@ -36,5 +39,3 @@ $(document).ready(function(){
     });
 
 
-//console log humidity of all 3 days so far we have:
-// humidity for all days. we need to filter out only 3 days
