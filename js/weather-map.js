@@ -16,8 +16,6 @@
     jgXhr.done(function(data){
         console.log(data);
         for(var i = 0; i < data.list.length; i+= 8){        //loop until end of object and only give every 8th
-            // var hum = data.list[i].main.humidity;        //humidity for 3 days in variable
-            // console.log(hum);
             var html = "<div class='card-body card d-inline float-left text-center mx-auto w-25 p-2 my-3'>";
             html += "<div>" +"<strong>"+"<h2>"+Math.round(data.list[i].main.temp)+ "&deg"+"</h2>"+"</strong>" + "</div>";
             html += "<div>" + pict +"</div>";
