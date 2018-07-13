@@ -50,7 +50,7 @@ users.push({
 
 // TODO: replace `var` with `let` in the following variable declarations
 let emails = [];
-var names = [];
+let names = [];
 
 // TODO: rewrite the following using arrow functions
 users.forEach((user) => {
