@@ -33,6 +33,14 @@ const users = [
 
 let lang = users.filter(users => users.languages.length >= 3);
 console.log("language", lang);
+//filters through the object of users and returns all info for those knowing three or more languages
 
 let emailAdd = users.map(users => users.email);
 console.log("emails", emailAdd);
+//returns all email addresses only
+
+// let obj = {};
+// let newObj = users.reduce( (accumilation, currObj) => {
+//
+// }, {});
+
