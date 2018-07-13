@@ -34,3 +34,5 @@ const users = [
 let lang = users.filter(users => users.languages.length >= 3);
 console.log("language", lang);
 
+let emailAdd = users.map(users => users.email);
+console.log("emails", emailAdd);
